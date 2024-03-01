@@ -1,4 +1,4 @@
-function getVisualSelection()
+function vim.getVisualSelection()
   vim.cmd('noau normal! "vy"')
   local text = vim.fn.getreg('v')
   vim.fn.setreg('v', {})
@@ -21,7 +21,7 @@ lvim.builtin.which_key.vmappings["s"] = {
   name = "Search",
   ["v"] = {
     function()
-      builtin.grep_string({ search = getVisualSelection() })
+      builtin.grep_string({ search = vim.getVisualSelection() })
     end, "Search for visual selection"
   }
 }
