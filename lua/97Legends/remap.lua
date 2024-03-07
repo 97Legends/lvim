@@ -36,11 +36,7 @@ lvim.builtin.which_key.mappings["ss"] = {
 
 
 
--- Mine
-lvim.builtin.which_key.mappings["term"] = {
-  ":below split term://bash<Enter>i", "Open Neovim Terminal"
-}
-
+-- 97Legends
 lvim.keys.term_mode["<esc>"] = "<C-\\><C-N>"
 lvim.keys.term_mode["<C-h>"] = "<C-\\><C-O><C-w>h<esc>"
 lvim.keys.term_mode["<C-j>"] = "<C-\\><C-O><C-w>j<esc>"
