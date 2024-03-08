@@ -4,3 +4,4 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
 require("97Legends.init")
+require("plugins.init")

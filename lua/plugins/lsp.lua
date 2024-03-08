@@ -1,6 +1,9 @@
 -- require("lspconfig").dartls.setup({})
+-- require("lvim.lsp.manager").setup("dartls", {
+--   -- cmd = { "dart", 'language-server', '--protocol=lsp' }
+--   cmd = { "C:\\sdk\\flutter\\bin\\dart.BAT", 'language-server', '--protocol=lsp' }
+-- })
 require("lvim.lsp.manager").setup("dartls")
-
 
 
 -- vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
