@@ -5,3 +5,10 @@
 
 require("97Legends.init")
 require("plugins.init")
+
+
+
+-- workspace settings
+
+require("workspaces.mobile")
+-- require("workspaces.portal-ex")

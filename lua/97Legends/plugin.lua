@@ -1,5 +1,6 @@
 lvim.plugins = {
-  { "github/copilot.vim" }
+  { "github/copilot.vim" },
+  { "tpope/vim-fugitive" }
 }
 
 -- Github Copilot
