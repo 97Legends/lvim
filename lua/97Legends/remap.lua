@@ -37,12 +37,14 @@ lvim.builtin.which_key.mappings["ss"] = {
 
 
 -- 97Legends
-lvim.keys.term_mode["<esc>"] = "<C-\\><C-N>"
+-- lvim.keys.term_mode["<esc>"] = "<C-\\><C-N>"
 lvim.keys.term_mode["<C-h>"] = "<C-\\><C-O><C-w>h<esc>"
 lvim.keys.term_mode["<C-j>"] = "<C-\\><C-O><C-w>j<esc>"
 lvim.keys.term_mode["<C-k>"] = "<C-\\><C-O><C-w>k<esc>"
 lvim.keys.term_mode["<C-l>"] = "<C-\\><C-O><C-w>l<esc>"
 
+lvim.keys.normal_mode["<leader>|"] = ":vsplit<CR>"
+lvim.keys.normal_mode["<leader>-"] = ":split<CR>"
 
 
 lvim.builtin.which_key.mappings["a"] = {
