@@ -9,6 +9,13 @@ require("plugins.init")
 
 
 -- workspace settings
+local cwd = vim.fn.getcwd(-1, -1)
 
-require("workspaces.mobile")
--- require("workspaces.portal-ex")
+-- print(cwd)
+if cwd == "C:\\Overview\\OVC\\client" then
+  -- print("portal-ex")
+  require("workspaces.portal-ex")
+elseif cwd == "C:\\Overview\\OVC\\mobile_app" then
+  -- print("mobile")
+  require("workspaces.mobile")
+end

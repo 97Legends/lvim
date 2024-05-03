@@ -26,7 +26,7 @@ require("flutter-tools").setup {
   debugger = {
     enabled = true,
     run_via_dap = true,
-    -- exception_breakpoints = {},
+    exception_breakpoints = {},
     register_configurations = function(_)
       local dap = require("dap")
       dap.set_log_level("TRACE")
@@ -57,12 +57,30 @@ require("flutter-tools").setup {
           sendLogsToClient = true,
         }
       }
-    end,
-  },
-
-
+    end
+  }
 }
 
+
+
+-- Flutter
+-- Use which-key to add extra bindings with the leader-key prefix
+require("telescope").load_extension("flutter")
+lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
+lvim.builtin.which_key.mappings["F"] = {
+  name = "+Flutter",
+  c = { "<cmd>Telescope flutter commands<cr>", "Open Flutter Commands" },
+  d = { "<cmd>FlutterDevices<cr>", "Flutter Devices" },
+  e = { "<cmd>FlutterEmulators<cr>", "Flutter Emulators" },
+  r = { "<cmd>FlutterReload<cr>", "Hot Reload App" },
+  R = { "<cmd>FlutterRestart<cr>", "Hot Restart app" },
+  q = { "<cmd>FlutterQuit<cr>", "Quit running application" },
+  -- v = { "<cmd>Telescope flutter fvm<cr>", "Flutter version" },
+}
+
+
+
+-- Trying to add flutter lua line stuff. Can't access the decorations
 -- local components = require("lvim.core.lualine.components")
 -- lvim.builtin.lualine.sections.lualine_x = {
 --   -- flutter-tools
