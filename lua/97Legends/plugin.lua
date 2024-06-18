@@ -2,6 +2,8 @@ vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "dartls" })
 lvim.plugins = {
   { "github/copilot.vim" },
   { "tpope/vim-fugitive" },
+  { "mbbill/undotree" },
+
   { "phenax/cmp-graphql" },
   {
     'akinsho/flutter-tools.nvim',
@@ -13,7 +15,8 @@ lvim.plugins = {
       'mfussenegger/nvim-dap',
     },
     config = true
-  }
+  },
+  { "nvim-treesitter/nvim-treesitter-angular" }
 }
 
 

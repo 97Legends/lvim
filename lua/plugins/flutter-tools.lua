@@ -27,6 +27,8 @@ require("flutter-tools").setup {
     enabled = true,
     run_via_dap = true,
     exception_breakpoints = {},
+    -- exception_breakpoints = "default",
+    -- exception_breakpoints = { "uncaught" },
     register_configurations = function(_)
       local dap = require("dap")
       dap.set_log_level("TRACE")

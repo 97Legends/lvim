@@ -77,3 +77,11 @@ lvim.builtin.which_key.vmappings["a"] = {
     "c'<C-r>\"'<esc>", "Surround in single quotes"
   }
 }
+
+
+lvim.builtin.which_key.mappings["b<"] = {
+  "<cmd>BufferLineMovePrev<CR>", "Move buffer to the left"
+}
+lvim.builtin.which_key.mappings["b>"] = {
+  "<cmd>BufferLineMoveNext<CR>", "Move buffer to the right"
+}
