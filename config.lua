@@ -18,4 +18,7 @@ if cwd == "C:\\Overview\\OVC\\client" then
 elseif cwd == "C:\\Overview\\OVC\\mobile_app" then
   -- print("mobile")
   require("workspaces.mobile")
+else
+  -- print("other")
+  require("workspaces.other")
 end
