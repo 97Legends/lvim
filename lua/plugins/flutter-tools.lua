@@ -8,16 +8,22 @@ require("flutter-tools").setup {
       background = true,
       virtual_text = false,
     },
+    -- TODO: does this overwrite other settings?
+    settings = {
+      -- TODO: does this overwrite other analysisExcludedFolders?
+      analysisExcludedFolders = {
+        vim.fn.expand("$HOME/AppData/Local/Pub/Cache"),
+      }
+    },
   },
 
-  -- can't get to work with LunarVim/lualine
-  -- decorations = {
-  --   statusline = {
-  --     app_version = true,
-  --     device = true,
-  --     project_config = true,
-  --   },
-  -- },
+  decorations = {
+    statusline = {
+      app_version = true,
+      device = true,
+      -- project_config = true,
+    },
+  },
 
   dev_log = {
     enabled = false,
@@ -78,22 +84,5 @@ lvim.builtin.which_key.mappings["F"] = {
   R = { "<cmd>FlutterRestart<cr>", "Hot Restart app" },
   q = { "<cmd>FlutterQuit<cr>", "Quit running application" },
   -- v = { "<cmd>Telescope flutter fvm<cr>", "Flutter version" },
+  w = { "<cmd>FlutterRun -d Chrome --web-renderer html<cr>", "Run in Chrome using --web-renderer html" },
 }
-
-
-
--- Trying to add flutter lua line stuff. Can't access the decorations
--- local components = require("lvim.core.lualine.components")
--- lvim.builtin.lualine.sections.lualine_x = {
---   -- flutter-tools
---   -- decorations.app_version,
---   -- decorations.device,
---   -- decorations.project_config,
-
---   -- Lvim
---   components.diagnostics,
---   components.lsp,
---   components.spaces,
---   components.filetype,
---   --
--- }
