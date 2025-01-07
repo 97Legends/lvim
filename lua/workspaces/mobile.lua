@@ -10,6 +10,9 @@ vim.opt.colorcolumn = "+1"
 lvim.format_on_save.enabled = true
 
 
+-- telescope
+lvim.builtin.telescope.defaults.file_ignore_patterns = { "^C:/sdk/flutter/" }
+
 
 -- Using exrc is not recommended.
 -- That being said, I am loading local .nvim.lua project configuration

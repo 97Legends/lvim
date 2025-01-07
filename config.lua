@@ -8,6 +8,9 @@ require("plugins.init")
 
 
 
+-- lvim.transparent_window = true
+
+
 -- workspace settings
 local cwd = vim.fn.getcwd(-1, -1)
 

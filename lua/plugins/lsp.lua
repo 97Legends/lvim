@@ -1,6 +1,7 @@
 -- require("lvim.lsp.manager").setup("dartls") -- Setup by flutter-tools
 require("lvim.lsp.manager").setup("graphql")
 require("lvim.lsp.manager").setup("angularls")
+require("lvim.lsp.manager").setup("sqlls")
 
 
 local formatters = require("lvim.lsp.null-ls.formatters")
