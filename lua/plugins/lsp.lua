@@ -11,10 +11,10 @@ formatters.setup {
     ---@usage arguments to pass to the formatter
     -- these cannot contain whitespace
     -- options such as `--line-width 80` become either `{"--line-width", "80"}` or `{"--line-width=80"}`
-    args = { "--print-width", "100" },
+    -- args = { "--print-width", "100" },
     ---@usage only start in these filetype, by default it will attach to all filetypes it supports
     -- filetypes = { "typescript", "graphql" },
-    filetypes = { "graphql" },
+    filetypes = { "typescript", "graphql" },
   },
 }
 

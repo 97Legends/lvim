@@ -1,6 +1,6 @@
 vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "dartls" })
 lvim.plugins = {
-  { "github/copilot.vim" },
+  -- { "github/copilot.vim" },
   { "tpope/vim-fugitive" },
   { "mbbill/undotree" },
 

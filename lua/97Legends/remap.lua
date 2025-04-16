@@ -85,3 +85,6 @@ lvim.builtin.which_key.mappings["b<"] = {
 lvim.builtin.which_key.mappings["b>"] = {
   "<cmd>BufferLineMoveNext<CR>", "Move buffer to the right"
 }
+lvim.builtin.which_key.mappings["bs"] = {
+  "<cmd>setlocal spell!<CR>", "Turn on Spellcheck for buffer"
+}

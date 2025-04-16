@@ -36,3 +36,5 @@ vim.opt.updatetime = 50
 vim.opt.whichwrap = "b,s"
 
 vim.opt.foldcolumn = "2"
+
+vim.opt.spelllang = "en_us"
